@@ -1,11 +1,15 @@
 # serverspec-run-on-ansible-playbook
-Serverspec run on the ansible-playbook with Ansible's hostvars variables
+Serverspec run on the ansible-playbook with Ansible's hostvars variables.
+Description of the English version is expected to write later.
 
 ## ServerspecをAnsibleのhostvars変数の値を使ってansible-playbook から実行する方法
 
 ## はじめに
-ちょっと長目の記事です。また、説明など少し足りない部分もあるかもしれません。
++ ちょっと長目の記事です。また、説明など少し足りない部分もあるかもしれません。
++ コード一式は[https://github.com/tbuchi888/serverspec-run-on-ansible-playbook](https://github.com/tbuchi888/serverspec-run-on-ansible-playbook)に上げています。
++ githubでの英語版の説明は別途書く予定です。
 
+## いままで
 Ansibleのインベントリホスト（ターゲットホスト）に対してServerspecを実施する場合以下の方法があると思います。
 
 |No.|方法|特徴|
