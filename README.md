@@ -89,9 +89,10 @@ hosts
 [win]
 win2012-iis01 spec_role=AAA ansible_host=192.168.33.51
 win2012-iis02 spec_role=BBB ansible_host=192.168.33.52
+
 [centos]
-centos6-httpd01 spec_role=AAA ansible_host=192.168.33.41 ansible_private_key_file=~/.ssh/cent01_id_rsa
-centos6-httpd02 spec_role=BBB ansible_host=192.168.33.42 ansible_private_key_file=~/.ssh/cent02_id_rsa
+centos6-httpd01 spec_role=AAA ansible_host=192.168.33.41
+centos6-httpd02 spec_role=BBB ansible_host=192.168.33.42
 myansible spec_role=BBB ansible_host=localhost
 
 [win:vars]
@@ -99,6 +100,7 @@ ansible_connection=winrm
 ansible_port=5985
 ansible_user=vagrant
 ansible_password=vagrant
+#web_service_name="World Wide Web Publishing Service"
 web_service_name="W3SVC"
 
 [centos:vars]
