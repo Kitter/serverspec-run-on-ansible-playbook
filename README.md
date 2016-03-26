@@ -1,6 +1,7 @@
 # serverspec-run-on-ansible-playbook
-Serverspec run on the ansible-playbook with Ansible's hostvars variables.
-Description of the English version is expected to write later.
++ Serverspec run on the ansible-playbook with Ansible's hostvars variables.
++ Description of the English version is expected to write later.
++ This README.md is Description for Japanese blog [qiita] (http://qiita.com/tbuchi888/items/2e2ab894b975823953aa).
 
 ## ServerspecをAnsibleのhostvars変数の値を使ってansible-playbook から実行する方法
 
