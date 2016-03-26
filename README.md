@@ -47,10 +47,14 @@ No.1に近い方法で、以下のAnsibleの`template`モジュールとServersp
   1. shellモジュールで上記ファイルと、serverspecのロール名を引数にしてserverspecを実行する
   1. debugモジュールでserverspec実行結果を表示 
 
+dump_variables.j2
+
 ``` dump_variables.j2
 {{ hostvars[inventory_hostname] | to_yaml }}
 #{{ vars | to_yaml }} 
 ```
+
+spec.yml
 
 ``` spec.yml
 ---
@@ -195,6 +199,8 @@ end
   + spec/AAA/sample_spec.rb
   + Ansibleのhostvarsに設定した変数`web_service_name`のサービス状態を確認するサンプル
 
+sample_spec.rb
+
 ``` sample_spec.rb
 require 'spec_helper'
 
@@ -207,6 +213,8 @@ end
 + ROLE:BBB
   + spec/BBB/sample_spec.rb
   + Ansibleのインベントリファイルの`inventory_hostname`をホスト名として含んでいるか確認するサンプル
+
+sample_spec.rb
 
 ``` sample_spec.rb
 require 'spec_helper'
